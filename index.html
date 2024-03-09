@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /* background-image: radial-gradient(
+          circle farthest-corner at 10% 20%,
+          rgba(90, 92, 106, 1) 0%,
+          rgba(32, 45, 58, 1) 81.3%
+        ); */
+        background-image: url(./images1/gradient.png);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: repeat-y;
+      }
+
+      .sun {
+        background-color: #ffe53b;
+        background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: fixed;
+        top: 36%;
+        left: 36%;
+      }
+      .line {
+        border: 2px solid black;
+        position: relative;
+        top: 10%;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        margin: auto;
+        animation: rotate 50s linear 2s infinite;
+      }
+      .planet {
+        width: 20px;
+        height: 20px;
+        background-color: #4158d0;
+        background-image: linear-gradient(
+          43deg,
+          #4158d0 0%,
+          #c850c0 46%,
+          #ffcc70 100%
+        );
+
+        border-radius: 50%;
+        margin-left: 14%;
+      }
+      .line1 {
+        border: 2px solid black;
+        position: relative;
+        top: 5%;
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        margin: auto;
+        animation: rotate 50s linear 2s infinite;
+      }
+      .planet1 {
+        width: 20px;
+        height: 20px;
+        background-color: #0093e9;
+        background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+
+        border-radius: 50%;
+        margin-left: 24%;
+      }
+      .line2 {
+        border: 2px solid black;
+        position: relative;
+        top: 4%;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        margin: auto;
+        animation: rotate 60s linear 2s infinite;
+      }
+      .planet2 {
+        width: 20px;
+        height: 20px;
+        background-color: #fbab7e;
+        background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+
+        border-radius: 50%;
+        margin-left: 30%;
+      }
+      .line3 {
+        border: 2px solid black;
+        position: relative;
+        top: 6%;
+        width: 330px;
+        height: 330px;
+        border-radius: 50%;
+        margin: auto;
+
+        animation: rotate 70s linear 2s infinite;
+      }
+      .planet3 {
+        width: 20px;
+        height: 20px;
+        background-color: #21d4fd;
+        background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+
+        border-radius: 50%;
+        margin-left: 30%;
+      }
+      .line4 {
+        border: 2px solid black;
+        position: relative;
+        top: 20px;
+        width: 417px;
+        height: 417px;
+        border-radius: 50%;
+        margin: auto;
+        animation: rotate 80s linear 2s infinite;
+      }
+      .planet4 {
+        width: 20px;
+        height: 20px;
+        background-color: #f4d03f;
+        background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+        border-radius: 50%;
+        margin-left: 34%;
+      }
+      .line5 {
+        border: 2px solid black;
+        position: relative;
+        top: 16px;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        margin: auto;
+        animation: rotate 90s linear 2s infinite;
+      }
+      .planet5 {
+        width: 20px;
+        height: 20px;
+        background: hsla(329, 91%, 65%, 1);
+
+        background: linear-gradient(
+          90deg,
+          hsla(329, 91%, 65%, 1) 0%,
+          hsla(350, 91%, 65%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+          90deg,
+          hsla(329, 91%, 65%, 1) 0%,
+          hsla(350, 91%, 65%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+          90deg,
+          hsla(329, 91%, 65%, 1) 0%,
+          hsla(350, 91%, 65%, 1) 100%
+        );
+
+        border-radius: 50%;
+        margin-left: 34%;
+      }
+      .line6 {
+        border: 2px solid black;
+        position: relative;
+        top: 13px;
+        width: 570px;
+        height: 570px;
+        border-radius: 50%;
+        margin: auto;
+        animation: rotate 97s linear 2s infinite;
+      }
+      .planet6 {
+        width: 20px;
+        height: 20px;
+        background: hsla(323, 91%, 51%, 1);
+
+        background: linear-gradient(
+          90deg,
+          hsla(323, 91%, 51%, 1) 0%,
+          hsla(329, 20%, 24%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+          90deg,
+          hsla(323, 91%, 51%, 1) 0%,
+          hsla(329, 20%, 24%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+          90deg,
+          hsla(323, 91%, 51%, 1) 0%,
+          hsla(329, 20%, 24%, 1) 100%
+        );
+
+        border-radius: 50%;
+        margin-left: 34%;
+      }
+      .line7 {
+        border: 2px solid black;
+        position: relative;
+        top: 15px;
+        width: 640px;
+        height: 640px;
+        border-radius: 50%;
+        margin: auto;
+        animation: rotate 90s linear 2s infinite;
+      }
+      .planet7 {
+        width: 20px;
+        height: 20px;
+        background: rgb(30, 52, 100);
+
+        background: linear-gradient(
+          90deg,
+          rgb(0, 0, 0) 0%,
+          hsla(220, 78%, 29%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+          90deg,
+          hsla(221, 45%, 73%, 1) 0%,
+          hsla(220, 78%, 29%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+          90deg,
+          hsla(221, 45%, 73%, 1) 0%,
+          hsla(220, 78%, 29%, 1) 100%
+        );
+
+
+        border-radius: 50%;
+        margin-left: 34%;
+      }
+
+      body::-webkit-scrollbar {
+        display: none;
+      }
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="line7">
+      <div class="planet7"></div>
+
+      <div class="line6">
+        <div class="planet6"></div>
+        <div class="line5">
+          <div class="planet5"></div>
+          <div class="line4">
+            <div class="planet4"></div>
+            <div class="line3">
+              <div class="planet3"></div>
+              <div class="line2">
+                <div class="planet2"></div>
+                <div class="line1">
+                  <div class="planet1"></div>
+                  <div class="line">
+                    <div class="planet"></div>
+                    <div class="sun"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
